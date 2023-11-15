@@ -35,7 +35,8 @@ public enum ErrorCode {
     ORDER_DETAIL_NOT_FOUND(HttpStatus.NOT_FOUND, "ORDER DETAIL NOT FOUND."),
     CART_ITEM_NOT_FOUND(HttpStatus.NOT_FOUND, "CART ITEM NOT FOUND."),
     CART_NOT_FOUND(HttpStatus.NOT_FOUND, "CART NOT FOUND."),
-    INVALID_QUANTITY(HttpStatus.BAD_REQUEST, "INVALID QUANTITY.")
+    INVALID_QUANTITY(HttpStatus.BAD_REQUEST, "INVALID QUANTITY."),
+    DELIVERY_NOT_FOUND(HttpStatus.NOT_FOUND, "DELIVERY NOT FOUND."),
     ;
     private final HttpStatus httpStatus;
     private final String message;
