@@ -10,6 +10,6 @@ import java.sql.Timestamp;
 public interface ProductRepository extends JpaRepository<Product, Long> {
     boolean existsByProductName(String ProductName);
     Product findByProductName(String productName);
-
+    boolean existsByProductId(Long productId);
     Page<Product> findBySaleStartDateBeforeAndSaleEndDateAfter(Timestamp currentTimestamp, Timestamp currentTimestamp1, Pageable pageable);
 }
